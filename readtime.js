@@ -1,0 +1,1 @@
+const wordsPerMinute=250,secondsPerImage=10;$(".blog-item").each((function(){if(!$(this).find(".is-read-time"))return!1;const t=$(this),i=t.find(".post"),e=i.text().split(" ").length,n=i.find("img").length,s=Math.floor(e/250+10*n/60),o=e/250*60+10*n,d=t.find(".is-read-time");o<60||1===s?d.text("1 min."):d.text(`${s} min.`)}));
